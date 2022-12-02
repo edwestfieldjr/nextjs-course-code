@@ -32,7 +32,8 @@ function PostContent(props) {
           <div className={classes.image}>
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
-              alt={image.alt}
+            //   alt={image.alt}
+              alt={image.properties.alt || "Image Unavailable"}
               width={600}
               height={300}
             />
